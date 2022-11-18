@@ -12,9 +12,6 @@ router.get(
   query('until').isISO8601().toDate(),
   query('location').isString().isLength({ min: 3 }),
   async (req: Request, res: Response) => {
-    console.log(req.query.location)
-    console.log(req.query.until)
-    console.log(req.query.topic)
     if (!validationResult(req).isEmpty()) {
       return res.status(400).json({ msg: 'Invalid request data' });
     }
