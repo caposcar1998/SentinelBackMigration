@@ -15,19 +15,15 @@
     "express-validator": "^6.14.0",
     "firebase": "^9.14.0",
     "sentiment": "^5.0.2",
-    "ts-node-dev": "^1.1.8",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
     "twitter": "^1.7.1",
     "twitter-v2": "^1.1.0"
   },
   "scripts": {
     "dev": "NODE_ENV=development ts-node-dev index.ts",
     "start": "NODE_ENV=production ts-node-dev index.ts",
-    "dev:win": "SET NODE_ENV=development & ts-node-dev index.ts",
-    "start:win": "SET NODE_ENV=production & ts-node-dev index.ts"
-  },
-  "workspaces": {
-    "nohoist": [
-      "**"
-    ]
+    "dev:win": "set NODE_ENV=development & ts-node-dev index.ts",
+    "start:win": "set NODE_ENV=production & ts-node-dev index.ts"
   }
 }
